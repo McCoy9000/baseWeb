@@ -1,0 +1,31 @@
+{
+  "name": "baseweb",
+  "version": "1.0.0",
+  "description": "web",
+  "main": "index.js",
+  "dependencies": {
+    "webpack": "^4.8.3",
+    "webpack-cli": "^2.1.3"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "eslint": "^4.19.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/McCoy9000/baseWeb.git"
+  },
+  "keywords": [
+    "web"
+  ],
+  "author": "McCoy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/McCoy9000/baseWeb/issues"
+  },
+  "homepage": "https://github.com/McCoy9000/baseWeb#readme"
+}
