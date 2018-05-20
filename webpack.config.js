@@ -50,14 +50,14 @@ var config = {
     },
     resolve: {
         alias: {
-            "modules": "src/modules"
+            "modules": SRC_DIR + "/modules"
         }
     },
     context: __dirname,
     target: "web",
     watch: true,
     devServer: {
-        contentBase: path.join(__dirname, "dist"),
+        contentBase: DIST_DIR,
         watchContentBase: true,
         port: 9000,
         compress: true,
@@ -65,7 +65,7 @@ var config = {
     },
     plugins: [
     new HtmlWebpackPlugin({
-        template: './src/template.html'
+        template: SRC_DIR + '/template.html'
       }),
     new webpack.NamedModulesPlugin(),
     new webpack.HotModuleReplacementPlugin()
