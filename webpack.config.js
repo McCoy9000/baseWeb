@@ -55,11 +55,18 @@ var config = {
     },
     context: __dirname,
     target: "web",
+    watch: true,
     devServer: {
-        hot: true,
+        contentBase: path.join(__dirname, "dist"),
+        watchContentBase: true,
+        port: 9000,
+        compress: true,
+        hot: true
     },
     plugins: [
-    new HtmlWebpackPlugin(),
+    new HtmlWebpackPlugin({
+        template: './src/template.html'
+      }),
     new webpack.NamedModulesPlugin(),
     new webpack.HotModuleReplacementPlugin()
     ]
