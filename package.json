@@ -2,7 +2,7 @@
   "name": "baseweb",
   "version": "1.0.0",
   "description": "web",
-  "main": "index.js",
+  "main": "main.js",
   "dependencies": {
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
