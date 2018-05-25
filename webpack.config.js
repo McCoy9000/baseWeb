@@ -4,6 +4,7 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 var DIST_DIR = path.resolve(__dirname, "dist");
 var SRC_DIR = path.resolve(__dirname, "src");
+var RES_DIR = path.resolve(__dirname, "resources");
 
 var config = {
     mode: "development",
@@ -16,7 +17,7 @@ var config = {
         rules: [
             {
                 test: /\.css$/,
-                include: SRC_DIR, //+ "/css/",
+                include: SRC_DIR,
                 use: [
                     'style-loader',
                     'css-loader'
@@ -30,15 +31,17 @@ var config = {
             },
             {
                 test: /\.(png|jpg|gif)$/,
+                include: RES_DIR,
                 loader: 'url-loader',
                 options: {
                   limit: 8192
                 }
             },
             {
-              test: /\.properties$/,
-              loader: 'i18n-loader',
-              options: {
+                test: /\.lang\.json$/,
+                include: RES_DIR,
+                loader: 'i18n-loader',
+                options: {
                 locales: [
                     "it",
                     "en",
