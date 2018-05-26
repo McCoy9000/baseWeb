@@ -5,7 +5,8 @@ import React from 'react';
 export class NavMenu extends React.Component {
     render() {
         return (
-            <div className={this.Component}>{this.Component}</div>
+            <div className='navMenu'>
+            </div>
         )
     }
 }

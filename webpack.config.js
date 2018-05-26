@@ -38,16 +38,24 @@ var config = {
                 }
             },
             {
+                test: /\.(png|jpg|gif)$/,
+                include: RES_DIR,
+                loader: 'url-loader',
+                options: {
+                  limit: 8192
+                }
+            },
+            {
                 test: /\.lang\.json$/,
                 include: RES_DIR,
                 loader: 'i18n-loader',
                 options: {
-                locales: [
-                    "it",
-                    "en",
-                    "es"
-                ]
-              }
+                    locales: [
+                        "it",
+                        "en",
+                        "es"
+                    ]
+                }
             }
         ]
     },
