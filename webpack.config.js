@@ -1,6 +1,7 @@
 var path = require("path");
 var webpack = require("webpack");
 var HtmlWebpackPlugin = require('html-webpack-plugin');
+var GoogleFontsPlugin = require("google-fonts-webpack-plugin")
 
 var DIST_DIR = path.resolve(__dirname, "dist");
 var SRC_DIR = path.resolve(__dirname, "src");
@@ -38,12 +39,9 @@ var config = {
                 }
             },
             {
-                test: /\.(png|jpg|gif)$/,
+                test: /\.(eot|ttf|woff|woff2)$/,
                 include: RES_DIR,
-                loader: 'url-loader',
-                options: {
-                  limit: 8192
-                }
+                loader: 'file-loader',
             },
             {
                 test: /\.lang\.json$/,
@@ -79,7 +77,12 @@ var config = {
         template: SRC_DIR + '/template.html'
       }),
     new webpack.NamedModulesPlugin(),
-    new webpack.HotModuleReplacementPlugin()
+    new webpack.HotModuleReplacementPlugin(),
+    new GoogleFontsPlugin({
+        fonts: [
+            { family: "Slabo 27px" },
+            ]
+        })
     ]
 };
 
