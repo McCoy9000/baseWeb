@@ -31,17 +31,12 @@ var config = {
                 loader: "babel-loader"
             },
             {
-                test: /\.(png|jpg|gif)$/,
+                test: /\.(png|jpe?g|gif|eot|ttf|woff|woff2)$/,
                 include: RES_DIR,
-                loader: 'url-loader',
+                loader: 'file-loader',
                 options: {
                   limit: 8192
                 }
-            },
-            {
-                test: /\.(eot|ttf|woff|woff2)$/,
-                include: RES_DIR,
-                loader: 'file-loader',
             },
             {
                 test: /\.lang\.json$/,
@@ -59,7 +54,11 @@ var config = {
     },
     resolve: {
         alias: {
-            "modules": SRC_DIR + "/modules"
+            "modules": SRC_DIR + "/modules",
+            "css": SRC_DIR + "/css",
+            "images": RES_DIR + "/images",
+            "fonts": RES_DIR + "/fonts",
+            "texts": RES_DIR + "/texts"
         }
     },
     context: __dirname,

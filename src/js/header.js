@@ -9,8 +9,8 @@ export class Header extends React.Component {
                 <h1 className='title'>
                     {T.translate("header.title", {context: "../resources/text/i18n-lang.json"})}
                 </h1>
-                <h2 className='subtitle'>
-                    header.subtitle
+                <h2 className='body'>
+                    header.body
                 </h2>
                 <div className='imgDiv'>
                     header.imgDiv

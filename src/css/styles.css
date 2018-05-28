@@ -12,8 +12,8 @@
 /*            url('../../resources/fonts/slabo-27px-v4-latin-regular.svg#Slabo27px') format('svg'); /* Legacy iOS */
 }
 
-.footer {
+body {
     font-family: 'Slabo 27px';
-    font-size: 100px;
+    font-size: 18px;
     color: red;
 }
