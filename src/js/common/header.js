@@ -1,4 +1,4 @@
-import '../css/styles.css';
+import '../../css/styles.css';
 import T from 'i18n-react';
 import React from 'react';
 

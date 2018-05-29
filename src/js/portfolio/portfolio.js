@@ -1,15 +1,17 @@
-import '../css/styles.css';
+import '../../css/styles.css';
 import T from 'i18n-react';
 import React from 'react';
-import {Image} from './image';
+import {Image} from '../common/image';
 
 function importAll(r) {
     r.keys().forEach(r);
 }
 const imagesImport = require.context('images/gallery/', true);
 
-const imageList = imagesImport.keys().map((key) =>
-    <Image src={require('./../../resources/images/gallery/' + (key.split('./')[1]))} />
+const imageList = imagesImport.keys().map((key) => {
+        var imgFileName = key.split('./')[1];
+        return <Image src={require('images/gallery/' + imgFileName)} />;
+    }
 );
 
 export class Portfolio extends React.Component {
