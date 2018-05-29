@@ -16,7 +16,6 @@ const imageList = imagesImport.keys().map((key) => {
 
 export class Portfolio extends React.Component {
     render() {
-            return imageList;
-
+            return null;
     }
 }
