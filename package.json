@@ -5,10 +5,12 @@
   "dependencies": {
     "axios": "^0.18.0",
     "google-fonts-webpack-plugin": "^0.4.4",
+    "history": "^4.7.2",
     "i18n-react": "^0.6.4",
     "lodash": "^4.17.10",
     "react": "^16.4.0",
     "react-dom": "^16.4.0",
+    "react-router-dom": "^4.2.2",
     "webfontloader": "^1.6.28",
     "webpack": "^4.10.1",
     "webpack-cli": "^2.1.4"
