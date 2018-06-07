@@ -5,7 +5,7 @@ import React from 'react';
 export class Contact extends React.Component {
     render() {
         return (
-            <div className={this.Component}></div>
+            <div className='contact'></div>
         )
     }
 }

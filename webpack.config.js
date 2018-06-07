@@ -70,7 +70,8 @@ var config = {
         watchContentBase: true,
         port: 9000,
         compress: true,
-        hot: true
+        hot: true,
+        historyApiFallback: true
     },
     plugins: [
     new HtmlWebpackPlugin({

@@ -10,12 +10,12 @@ const imagesImport = require.context('images/gallery/', true);
 
 const imageList = imagesImport.keys().map((key) => {
         var imgFileName = key.split('./')[1];
-        return <Image src={require('images/gallery/' + imgFileName)} />;
+        return <Image key={imgFileName} src={require('images/gallery/' + imgFileName)} />;
     }
 );
 
 export class Portfolio extends React.Component {
     render() {
-            return null;
+            return imageList;
     }
 }
