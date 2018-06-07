@@ -2,7 +2,9 @@ import '../../css/styles.css';
 
 import T from 'i18n-react';
 import React from 'react';
-import {Router, Route, IndexRoute, hashHistory} from 'react-router';
+import {BrowserRouter as Router, Route, IndexRoute, hashHistory} from 'react-router';
+
+import {Hero} from '../hero/hero';
 
 import {Portfolio} from '../portfolio/portfolio';
 import {Resume} from '../resume/resume';
@@ -10,14 +12,14 @@ import {Contact} from '../resume/contact';
 import {Blog} from '../blog/blog';
 
 export class Body extends React.Component {
-    render() {
+    render(props) {
         return (
-            <div className="body">
-                <IndexRoute component='Portfolio'></IndexRoute>
-                <Route path='/resume' component='Resume'></Route>
-                <Route path='/contact' component='Contact'></Route>
-                <Route path='/blog' component='Blog'></Route>
+            <div>
                 {this.props.children}
+                <Route path='/home/portfolio' component={Portfolio}></Route>
+                <Route path='/home/resume' component={Resume}></Route>
+                <Route path='/home/contact' component={Contact}></Route>
+                <Route path='/home/blog' component={Blog}></Route>
             </div>
         )
     }

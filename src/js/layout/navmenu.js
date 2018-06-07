@@ -1,24 +1,18 @@
 import '../../css/styles.css';
 import T from 'i18n-react';
 import React from 'react';
-import {Link} from 'react-router';
+import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
 
 export class NavMenu extends React.Component {
-    burgerToggle () {
-		let linksEl = document.querySelector('.narrowLinks');
-		if (linksEl.style.display === 'block') {
-			linksEl.style.display = 'none';
-		} else {
-			linksEl.style.display = 'block';
-		}
-	}
+
     render() {
         return (
-            <div className='navMenu'>
-                <nav>
-                    <Link to='resume'><button>RESUME</button></Link>
-                </nav>
-            </div>
+            <nav>
+                <Link to='/home/portfolio'><button>RESUME</button></Link>
+                <Link to='/home/resume'><button>RESUME</button></Link>
+                <Link to='/home/blog'><button>RESUME</button></Link>
+                <Link to='/home/contact'><button>RESUME</button></Link>
+            </nav>
         )
     }
 }

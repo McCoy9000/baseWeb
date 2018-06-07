@@ -1,4 +1,7 @@
 import React from 'react';
+
+import {Route} from 'react-router-dom';
+
 import {Header} from './header';
 import {NavMenu} from './navmenu';
 import {Body} from './body';
@@ -8,7 +11,10 @@ export class Layout extends React.Component {
     render() {
         return (
             <div>
-                Hello, World
+                <Header />
+                <NavMenu />
+                <Body />
+                <Footer />
             </div>
         )
     }

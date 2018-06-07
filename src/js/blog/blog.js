@@ -5,7 +5,7 @@ import React from 'react';
 export class Blog extends React.Component {
     render() {
         return (
-            <div className='blog'></div>
+            <div className='blog'>Blog</div>
         )
     }
 }
