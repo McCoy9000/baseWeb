@@ -10,7 +10,7 @@ const imagesImport = require.context('images/gallery/', true);
 
 const imageList = imagesImport.keys().map((key) => {
         var imgFileName = key.split('./')[1];
-        return <Image key={imgFileName} src={require('images/gallery/' + imgFileName)} />;
+return <Image key={imgFileName} src={`/${require("images/gallery/" + imgFileName)}`} alt={imgFileName} />;
     }
 );
 
