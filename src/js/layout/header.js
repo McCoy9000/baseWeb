@@ -9,7 +9,7 @@ export class Header extends React.Component {
     return (
       <div className='header'>
         <h1 className='title'>
-          <FormattedMessage id='en.header.title' />
+          <FormattedMessage id='title' />
         </h1>
         <h2 className='body'>
           header.body
