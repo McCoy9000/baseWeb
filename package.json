@@ -10,6 +10,7 @@
     "lodash": "^4.17.10",
     "react": "^16.4.0",
     "react-dom": "^16.4.0",
+    "react-intl": "^2.4.0",
     "react-router-dom": "^4.2.2",
     "webfontloader": "^1.6.28",
     "webpack": "^4.10.1",

@@ -3,10 +3,14 @@ import T from 'i18n-react'
 
 import React from 'react'
 
-export class Header extends React.Component {
-  render () {
+export class List extends React.Component {
+  render (props) {
     return (
-      <div className={this.Component}></div>
+      <div className='list'>
+        <ul>
+          {this.props.children}
+        </ul>
+      </div>
     )
   }
 }

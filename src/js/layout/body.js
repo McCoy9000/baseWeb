@@ -1,10 +1,8 @@
 import '../../css/styles.css'
-
 import T from 'i18n-react'
+
 import React from 'react'
 import {BrowserRouter as Router, Route, IndexRoute, hashHistory} from 'react-router'
-
-import {Hero} from '../hero/hero'
 
 import {Portfolio} from '../portfolio/portfolio'
 import {Resume} from '../resume/resume'
