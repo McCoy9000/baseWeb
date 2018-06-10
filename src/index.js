@@ -21,7 +21,7 @@ const language = 'en' //browserLocale.split(/[-_]/)[0]
 
 ReactDOM.render(
   <div>
-    <IntlProvider locale={language} key={browserLocale} messages={messages[language]}>
+    <IntlProvider locale={language} key={language} messages={messages[language]}>
       <App />
     </IntlProvider>
   </div>,

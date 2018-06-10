@@ -1,4 +1,8 @@
 {
     "title": "Hello, React",
-    "subtitle":"This is awesome!"
+    "subtitle":"This is awesome!",
+    "header": {
+        "title": "Header Title"
+    },
+    "langSelector": "Italian"
 }
