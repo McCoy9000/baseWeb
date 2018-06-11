@@ -21,7 +21,7 @@ export class LangSelector extends React.Component {
   render () {
     return (
       <div className='langSelector'>
-        <Button buttonTitle={<FormattedMessage id= 'langSelector' />} onClick={switchLocale}/>
+        <Button buttonTitle={<FormattedMessage id='langSelector' />} onClick={switchLocale}/>
       </div>
     )
   }
