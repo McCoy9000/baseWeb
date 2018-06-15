@@ -4,9 +4,9 @@ import T from 'i18n-react'
 import React from 'react'
 import {BrowserRouter as Router, Route, IndexRoute, hashHistory} from 'react-router'
 
-import {Portfolio} from '../portfolio/portfolio'
-import {Resume} from '../resume/resume'
-import {Contact} from '../resume/contact'
+import {Portfolio} from '../portfolio'
+import {Resume} from '../resume'
+import {Contact} from '../contact'
 import {Blog} from '../blog/blog'
 
 export class Body extends React.Component {

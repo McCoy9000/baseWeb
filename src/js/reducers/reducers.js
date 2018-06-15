@@ -1,7 +1,8 @@
-import {combineReducer} from 'redux'
-import postReducer from './postReducer'
-import { combineReducers } from '../../../node_modules/redux/index'
+import {combineReducers} from 'redux'
+import langReducer from './langReducer'
 
-export default combineReducers({
-  posts: postReducer
+const rootReducer = combineReducers({
+  langs: langReducer
 })
+
+export default rootReducer
