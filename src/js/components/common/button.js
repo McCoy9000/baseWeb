@@ -1,8 +1,6 @@
-import '../../css/styles.css'
+import '../../../css/styles.css'
 
 import React from 'react'
-
-import { FormattedMessage } from 'react-intl';
 
 export class Button extends React.Component {
   render (props) {

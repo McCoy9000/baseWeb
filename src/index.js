@@ -5,7 +5,7 @@ import ReactDOM from 'react-dom'
 import { Provider } from 'react-redux'
 
 import {App} from './js/app'
-import {store} from './js/store'
+import {store} from './js/store/store'
 import {ConnectedIntlProvider} from './js/i18n/connectedIntlProvider'
 import {messages, language, loadLocaleData} from './js/i18n/messages'
 

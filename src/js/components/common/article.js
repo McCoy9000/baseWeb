@@ -1,12 +1,11 @@
-import '../../css/styles.css'
-import T from 'i18n-react'
+import '../../../css/styles.css'
 
 import React from 'react'
 
-export class Header extends React.Component {
+export class Article extends React.Component {
   render () {
     return (
-      <div className={this.Component}></div>
+      <div className='article'></div>
     )
   }
 }

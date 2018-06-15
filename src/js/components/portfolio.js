@@ -1,8 +1,8 @@
 import '../../css/styles.css'
-import T from 'i18n-react'
+
 import React from 'react'
-import {Image} from '../common/image'
-import {List} from '../common/list'
+import {Image} from './common/image'
+import {List} from './common/list'
 
 const imagesImport = require.context('images/gallery/', true)
 

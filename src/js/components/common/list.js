@@ -1,10 +1,9 @@
-import '../../css/styles.css'
-import T from 'i18n-react'
+import '../../../css/styles.css'
 
 import React from 'react'
 
 export class List extends React.Component {
-  render (props) {
+  render () {
     return (
       <div className='list'>
         <ul>
