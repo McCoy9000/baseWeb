@@ -2,7 +2,6 @@ import '../../css/styles.css'
 
 import React from 'react'
 
-import {changeLang} from '../actions/langActions'
 import {Button} from './button'
 import {FormattedMessage} from 'react-intl';
 import {store} from '../../store/store'
