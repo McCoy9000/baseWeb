@@ -1,13 +1,12 @@
-import '../../css/styles.css'
-import T from 'i18n-react'
+import '../../../css/styles.css'
 
 import React from 'react'
-import {BrowserRouter as Router, Route, IndexRoute, hashHistory} from 'react-router'
+import {Route, IndexRoute} from 'react-router'
 
 import {Portfolio} from '../portfolio'
 import {Resume} from '../resume'
 import {Contact} from '../contact'
-import {Blog} from '../blog/blog'
+import {Blog} from '../blog'
 
 export class Body extends React.Component {
   render (props) {
