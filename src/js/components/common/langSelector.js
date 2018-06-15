@@ -4,10 +4,12 @@ import React from 'react'
 
 import {changeLang} from '../actions/langActions'
 import {Button} from './button'
-import { FormattedMessage } from 'react-intl';
+import {FormattedMessage} from 'react-intl';
+import {store} from '../../store/store'
+import {changeLang} from '../../actions/langActions'
 
 function switchLanguage () {
-  store.
+  store.dispatch(changeLang)
 }
 
 export class LangSelector extends React.Component {
