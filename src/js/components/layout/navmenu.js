@@ -1,8 +1,7 @@
 import '../../css/styles.css'
-import T from 'i18n-react'
 
 import React from 'react'
-import {BrowserRouter as Router, Route, Link} from 'react-router-dom'
+import {Link} from 'react-router-dom'
 
 export class NavMenu extends React.Component {
 
