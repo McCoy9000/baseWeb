@@ -55,7 +55,7 @@ var config = {
   resolve: {
     alias: {
       'js': SRC_DIR + '/js',
-      'modules': SRC_DIR + '/js/modules',
+      'components': SRC_DIR + '/js/components',
       'css': SRC_DIR + '/css',
       'images': RES_DIR + '/images',
       'fonts': RES_DIR + '/fonts',
