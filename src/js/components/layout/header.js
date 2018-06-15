@@ -2,7 +2,7 @@ import '../../css/styles.css'
 
 import React from 'react'
 
-import {LangSelector} from '../langSelector/langSelector'
+import {LangSelector} from '../langSelector'
 import {FormattedMessage} from 'react-intl'
 
 export class Header extends React.Component {
