@@ -2,6 +2,7 @@ import '../../css/styles.css'
 
 import React from 'react'
 
+import {LangSelector} from '../langSelector/langSelector'
 import {FormattedMessage} from 'react-intl'
 
 export class Header extends React.Component {
@@ -16,6 +17,9 @@ export class Header extends React.Component {
         </h2>
         <div className='imgDiv'>
           header.imgDiv
+        </div>
+        <div>
+          <LangSelector />
         </div>
       </div>
     )
