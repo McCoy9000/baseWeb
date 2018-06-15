@@ -1,17 +1,18 @@
-import '../../css/styles.css'
-import T from 'i18n-react'
+import '../../../css/styles.css'
 
 import React from 'react'
+
+import {FormattedMessage} from 'react-intl'
 
 export class Footer extends React.Component {
   render () {
     return (
       <div className='footer'>
         <h1 className='title'>
-          {T.translate('header.title', {context: '../resources/text/i18n-lang.json'})}
+          <FormattedMessage id='footerTitle' />
         </h1>
         <h2 className='body'>
-          {T.translate('header.title', {context: '../resources/text/i18n-lang.json'})}
+          <FormattedMessage id='footerTitle' />
         </h2>
         <div className='imgDiv'>
           header.imgDiv
