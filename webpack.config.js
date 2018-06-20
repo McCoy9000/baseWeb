@@ -33,10 +33,7 @@ var config = {
       {
         test: /\.(png|jpe?g|gif|eot|ttf|woff|woff2)$/,
         include: RES_DIR,
-        loader: 'file-loader',
-        options: {
-          limit: 8192
-        }
+        loader: 'file-loader'
       },
       {
         test: /\.lang\.json$/,
@@ -53,6 +50,10 @@ var config = {
     ]
   },
   resolve: {
+    modules: [
+      'node_modules',
+      path.resolve(__dirname, 'app')
+    ],
     alias: {
       'js': SRC_DIR + '/js',
       'components': SRC_DIR + '/js/components',
