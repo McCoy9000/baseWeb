@@ -4,6 +4,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 
 import {App} from './js/app'
+
 import {IntlProvider} from 'react-intl'
 import {messages, language, loadLocaleData} from './js/i18n/messages'
 
