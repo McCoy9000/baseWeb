@@ -9,7 +9,7 @@ export class LangSelector extends React.Component {
   render () {
     return (
       <div className='langSelector'>
-        <Button value={<FormattedMessage id='langSelector' />} />
+        <Button buttonTitle={<FormattedMessage id='langSelectorButton' />} value={<FormattedMessage id='langSelector' />} />
       </div>
     )
   }

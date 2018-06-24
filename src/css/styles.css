@@ -11,13 +11,32 @@
           url('../../resources/fonts/slabo-27px-v4-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
 /*          url('../../resources/fonts/slabo-27px-v4-latin-regular.svg#Slabo27px') format('svg'); /* Legacy iOS */
 }
-
+/*GENERAL*/
 body {
   font-family: 'Slabo 27px';
   font-size: 18px;
-  color: red;
+  color: rgb(25, 25, 25);
 }
-
 ul li {
   list-style: none;
 }
+/*HERO*/
+/*HEADER*/
+/*NAVBAR*/
+.navbar ul li {
+  display: inline
+}
+/*PORTFOLIO*/
+.portfolio ul li {
+  display: inline
+}
+.portfolio ul li div {
+  display: inline
+}
+.portfolio img {
+  height: 200px
+}
+/*RESUME*/
+/*BLOG*/
+/*CONTACT*/
+/*FOOTER*/

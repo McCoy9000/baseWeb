@@ -11,7 +11,7 @@ const imageList = imagesImport.keys().map((key) => {
 
   return (
     <li>
-      <Image key={imgFileName} src={`/${require('images/gallery/' + imgFileName)}`} alt={imgFileName} />
+      <Image key={imgFileName} title={imgFileName} src={`/${require('images/gallery/' + imgFileName)}`} alt={imgFileName} />
     </li>
   )
 })
@@ -19,9 +19,11 @@ const imageList = imagesImport.keys().map((key) => {
 export class Portfolio extends React.Component {
   render () {
     return (
-      <List>
-        {imageList}
-      </List>
-    )
+      <div className="portfolio">
+        <List>
+          {imageList}
+        </List>
+      </div>
+    ) 
   }
 }
