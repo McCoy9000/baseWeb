@@ -1,6 +1,14 @@
 export const messagesIt = {
-  headerTitle: 'IT_Header title',
-  bodyTitle: 'IT_Body title',
-  footerTitle: 'IT_Footer title',
-  langSelectorButton: 'IT_Italiano'
+  header: {
+    title: 'IT_Header title'
+  },
+  body: {
+    title: 'IT_Body title'
+  },
+  footer: {
+    title: 'IT_Footer title'
+  },
+  langSelector: {
+    button: 'IT_Italiano'
+  }
 }
