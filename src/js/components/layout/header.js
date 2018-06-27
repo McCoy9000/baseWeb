@@ -6,7 +6,7 @@ import {LangSelector} from '../langSelector'
 import {FormattedMessage} from 'react-intl'
 
 export class Header extends React.Component {
-  render () {
+  render (props) {
     return (
       <div className='header'>
         <h1 className='title'>
@@ -18,7 +18,7 @@ export class Header extends React.Component {
         <div className='imgDiv'>
         </div>
         <div>
-          <LangSelector />
+          <LangSelector changeLanguage={props.changeLanguage} />
         </div>
       </div>
     )

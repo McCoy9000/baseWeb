@@ -8,21 +8,22 @@ import {Hero} from './components/hero'
 
 export class AltApp extends React.Component {
   constructor () {
-      super()
-      messageSource.init()
-      this.setState({language: messageSource.language})
-      }
+    super()
+    messageSource.init()
+    this.setState({language: messageSource.language})
   }
 
-  const changeLanguage = messageSource.changeLanguage()
-  
+  changeLanguage () {
+    messageSource.changeLanguage()
+  }
+
   render () {
     return (
       <IntlProvider locale={this.state.language} key={this.state.language} messages={messageSource.messages[language]}>
         <Router history={browserHistory} path='/'>
           <div>
             <Route exact path='/' component={Hero}></Route>
-            <Route path='/home' component={Layout}></Route>
+            <Route path='/home' render={(props) => <Layout {...props} changeLanguage={changeLanguage}/>}></Route>
           </div>
         </Router>
       </IntlProvider>  

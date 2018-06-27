@@ -21,13 +21,13 @@ const loadLocaleData = () => {
   addLocaleData(locales)
 }
 
-const changeLanguage = (newLanguage) => {
-	this.language = newLanguage
+const changeLanguage = function (newLanguage) {
+  this.language = newLanguage
 }
 
-export messageSource = {
-	language: language,
-	messages: messages,
-	init: loadLocaleData,
-	changeLanguage: changeLanguage.bind(this)
+export const messageSource = {
+  language: language,
+  messages: messages,
+  init: loadLocaleData,
+  changeLanguage: changeLanguage.bind(this)
 }

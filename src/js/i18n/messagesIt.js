@@ -9,6 +9,7 @@ export const messagesIt = {
     title: 'IT_Footer title'
   },
   langSelector: {
-    button: 'IT_Italiano'
+    button: 'IT_Italiano',
+    value: 'en'
   }
 }

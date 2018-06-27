@@ -10,6 +10,7 @@ export const messagesEn =
       title: 'Footer title'
     },
     langSelector: {
-      button: 'Italiano'
+      button: 'Italiano',
+      value: 'it'
     }
   }

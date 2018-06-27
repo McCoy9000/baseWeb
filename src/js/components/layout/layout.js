@@ -5,11 +5,11 @@ import {NavMenu} from './navmenu'
 import {Body} from './body'
 import {Footer} from './footer'
 
-export class Layout extends React.Component {
-  render () {
+export class Layout extends React.Component {  
+  render (props) {
     return (
       <div>
-        <Header />
+        <Header changeLanguage={props.changeLanguage}/>
         <NavMenu />
         <Body />
         <Footer />
