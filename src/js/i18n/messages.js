@@ -19,4 +19,5 @@ const locales = [...it, ...es]
 
 export const loadLocaleData = () => {
   addLocaleData(locales)
+  return locales
 }

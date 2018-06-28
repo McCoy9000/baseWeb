@@ -6,10 +6,10 @@ import {Body} from './body'
 import {Footer} from './footer'
 
 export class Layout extends React.Component {  
-  render (props) {
+  render () {
     return (
       <div>
-        <Header changeLanguage={props.changeLanguage}/>
+        <Header changeLanguage={this.props.changeLanguage}/>
         <NavMenu />
         <Body />
         <Footer />

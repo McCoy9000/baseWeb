@@ -12,7 +12,6 @@ export class Body extends React.Component {
   render (props) {
     return (
       <div>
-        {this.props.children}
         <Route path='/home/portfolio' component={Portfolio}></Route>
         <Route path='/home/resume' component={Resume}></Route>
         <Route path='/home/contact' component={Contact}></Route>

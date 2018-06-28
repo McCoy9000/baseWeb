@@ -3,7 +3,6 @@ import './css/styles.css'
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-import {App} from './js/app'
 import {AltApp} from './js/alt-app'
 
 ReactDOM.render(

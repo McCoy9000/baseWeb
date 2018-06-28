@@ -1,15 +1,10 @@
 export const messagesEs = {
-  header: {
-    title: 'ES_Header title'
-  },
-  body: {
-    title: 'ES_Body title'
-  },
-  footer: {
-    title: 'ES_Footer title'
-  },
-  langSelector: {
-    button: 'ES_Italiano',
-    value: 'en'
-  }
+  headerTitle: 'ES_Header title',
+  headerBody: 'ES_Header body',
+  bodyTitle: 'ES_Body title',
+  bodyBody: 'ES_Body body',
+  footerTitle: 'ES_Footer title',
+  footerBody: 'ES_Footer body',
+  langSelectorButton: 'ES_English',
+  langSelectorValue: 'en'
 }

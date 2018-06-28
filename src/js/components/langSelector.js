@@ -10,7 +10,7 @@ export class LangSelector extends React.Component {
   render (props) {
     return (
       <div className='langSelector'>
-        <Button buttonTitle={<FormattedMessage id='langSelector.button' />} value={<FormattedMessage id='langSelector.button.value' />} onClick={props.changeLanguage(props.value)} />
+        <Button buttonTitle={<FormattedMessage id='langSelectorButton' />} value={<FormattedMessage id='langSelectorValue' />} onClick={this.props.changeLanguage(<FormattedMessage id='langSelectorButton' />)} />
       </div>
     )
   }

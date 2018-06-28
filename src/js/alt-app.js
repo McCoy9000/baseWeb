@@ -10,23 +10,22 @@ export class AltApp extends React.Component {
   constructor () {
     super()
     messageSource.init()
-    this.setState({language: messageSource.language})
+    this.changeLanguage = this.changeLanguage.bind(this)
+    this.state = {language: messageSource.language}
   }
-
-  changeLanguage () {
-    messageSource.changeLanguage()
+  changeLanguage (newLanguage) {
+    this.state.language = newLanguage
   }
-
-  render () {
+  render (props) {
     return (
-      <IntlProvider locale={this.state.language} key={this.state.language} messages={messageSource.messages[language]}>
+      <IntlProvider locale={this.state.language} key={this.state.language} messages={messageSource.messages[this.state.language]}>
         <Router history={browserHistory} path='/'>
           <div>
             <Route exact path='/' component={Hero}></Route>
-            <Route path='/home' render={(props) => <Layout {...props} changeLanguage={changeLanguage}/>}></Route>
+            <Route path='/home' render={(props) => <Layout {...props} changeLanguage={this.changeLanguage}/>}></Route>
           </div>
         </Router>
-      </IntlProvider>  
+      </IntlProvider>
     )
   }
 }

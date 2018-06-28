@@ -10,15 +10,15 @@ export class Header extends React.Component {
     return (
       <div className='header'>
         <h1 className='title'>
-          <FormattedMessage id='header.title' />
+          <FormattedMessage id='headerTitle' />
         </h1>
         <h2 className='body'>
-          <FormattedMessage id='header.body' />
+          <FormattedMessage id='headerBody' />
         </h2>
         <div className='imgDiv'>
         </div>
         <div>
-          <LangSelector changeLanguage={props.changeLanguage} />
+          <LangSelector changeLanguage={this.props.changeLanguage} />
         </div>
       </div>
     )
