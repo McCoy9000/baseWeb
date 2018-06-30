@@ -22,6 +22,12 @@ const loadLocaleData = () => {
   return locales
 }
 
+export function changeLang (newLanguage) {
+  this.setState({
+    language: newLanguage
+  })
+}
+
 const changeLanguage = newLanguage => {
   messageSource.language = newLanguage
   return newLanguage

@@ -1,4 +1,7 @@
 export const messagesEn = {
+  hero: 'Hero',
+  home: 'Home',
+  alert: 'Alert',
   headerTitle: 'EN_Header title',
   headerBody: 'EN_Header body',
   bodyTitle: 'EN_Body title',

@@ -7,7 +7,7 @@ import {FormattedMessage} from 'react-intl'
 
 export class LangSelector extends React.Component {
 
-  render (props) {
+  render () {
     return (
       <div className='langSelector'>
         <Button buttonTitle={<FormattedMessage id='langSelectorButton' />} value='en' onClick={this.props.changeLanguage('en')} />
