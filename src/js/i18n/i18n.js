@@ -1,40 +1,48 @@
 import it from 'react-intl/locale-data/it'
 import es from 'react-intl/locale-data/es'
-import {addLocaleData} from 'react-intl'
-import {messagesEn} from './messagesEn'
-import {messagesIt} from './messagesIt'
-import {messagesEs} from './messagesEs'
+import { addLocaleData } from 'react-intl'
+import { messagesEn } from './messagesEn'
+import { messagesIt } from './messagesIt'
+import { messagesEs } from './messagesEs'
 
 const messages = {
-  'en': messagesEn,
-  'it': messagesIt,
-  'es': messagesEs
+  en: messagesEn,
+  it: messagesIt,
+  es: messagesEs
 }
 
 const browserLocale = navigator.language
 
-var language = browserLocale.split(/[-_]/)[0]
+let language = browserLocale.split(/[-_]/)[0]
 
-const locales = [...it, ...es]
+const availableLanguages = ['en', 'es', 'it']
+
+const locales = [...it, ...es];
 
 const loadLocaleData = () => {
   addLocaleData(locales)
   return locales
-}
+};
 
-export function changeLang (newLanguage) {
+const changeLanguage = function (newLanguage) {
   this.setState({
-    language: newLanguage
+    language: newLanguage,
+    availableLanguage: (function (newLang) {
+      switch (newLang) {
+        case 'en':
+          return 'it'
+        case 'it':
+          return 'en'
+        default:
+          return 'en'
+      }
+    })(newLanguage)
   })
-}
-
-const changeLanguage = newLanguage => {
-  messageSource.language = newLanguage
-  return newLanguage
 }
 
 export const messageSource = {
   language: language,
+  availableLanguages: availableLanguages,
   messages: messages,
   changeLanguage: changeLanguage,
   init: loadLocaleData

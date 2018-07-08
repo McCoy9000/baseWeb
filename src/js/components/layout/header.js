@@ -2,25 +2,29 @@ import '../../../css/styles.css'
 
 import React from 'react'
 
-import {LangSelector} from '../langSelector'
-import {FormattedMessage} from 'react-intl'
+import { LangSelector } from '../langSelector'
+import { FormattedMessage } from 'react-intl'
 
 export class Header extends React.Component {
-  render (props) {
+  constructor(props) {
+    super(props)
+    this.i18n = props.i18n
+  }
+
+  render() {
     return (
-      <div className='header'>
-        <h1 className='title'>
-          <FormattedMessage id='headerTitle' />
+      <div className="header">
+        <h1 className="title">
+          <FormattedMessage id="headerTitle" />
         </h1>
-        <h2 className='body'>
-          <FormattedMessage id='headerBody' />
+        <h2 className="body">
+          <FormattedMessage id="headerBody" />
         </h2>
-        <div className='imgDiv'>
-        </div>
+        <div className="imgDiv" />
         <div>
-          <LangSelector changeLanguage={this.props.changeLanguage} />
+          <LangSelector i18n={this.i18n} />
         </div>
       </div>
-    )
+    );
   }
 }
