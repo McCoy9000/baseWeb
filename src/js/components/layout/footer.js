@@ -2,10 +2,10 @@ import '../../../css/styles.css'
 
 import React from 'react'
 
-import {FormattedMessage} from 'react-intl'
+import { FormattedMessage } from 'react-intl'
 
 export class Footer extends React.Component {
-  render () {
+  render() {
     return (
       <div className='footer'>
         <h1 className='title'>

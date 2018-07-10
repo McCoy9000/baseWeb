@@ -3,7 +3,7 @@ import '../../../css/styles.css'
 import React from 'react'
 
 export class List extends React.Component {
-  render () {
+  render() {
     return (
       <div className='list'>
         <ul>

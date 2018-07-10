@@ -6,15 +6,10 @@ import { Body } from './body'
 import { Footer } from './footer'
 
 export class Layout extends React.Component {
-  constructor(props) {
-    super(props)
-    this.i18n = props.i18n
-  }
-
   render() {
     return (
       <div>
-        <Header i18n={this.i18n} />
+        <Header changeLanguage={this.props.changeLanguage} />
         <NavMenu />
         <Body />
         <Footer />

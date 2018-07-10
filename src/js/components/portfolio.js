@@ -1,8 +1,8 @@
 import '../../css/styles.css'
 
 import React from 'react'
-import {Image} from './common/image'
-import {List} from './common/list'
+import { Image } from './common/image'
+import { List } from './common/list'
 
 const imagesImport = require.context('images/gallery/', true)
 
@@ -17,13 +17,13 @@ const imageList = imagesImport.keys().map((key) => {
 })
 
 export class Portfolio extends React.Component {
-  render () {
+  render() {
     return (
       <div className="portfolio">
         <List>
           {imageList}
         </List>
       </div>
-    ) 
+    )
   }
 }

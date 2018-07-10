@@ -3,7 +3,7 @@ import '../../css/styles.css'
 import React from 'react'
 
 export class Blog extends React.Component {
-  render () {
+  render() {
     return (
       <div className='blog'>Blog</div>
     )

@@ -1,11 +1,11 @@
 import '../../../css/styles.css'
 
 import React from 'react'
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 export class NavMenu extends React.Component {
 
-  render () {
+  render() {
     return (
       <nav>
         <Link to='/home/portfolio'><button>RESUME</button></Link>

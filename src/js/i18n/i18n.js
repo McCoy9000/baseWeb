@@ -17,26 +17,26 @@ let language = browserLocale.split(/[-_]/)[0]
 
 const availableLanguages = ['en', 'es', 'it']
 
-const locales = [...it, ...es];
+const localeData = [...it, ...es]
 
-const loadLocaleData = () => {
+const initialize = function () {
+  const locales = localeData
   addLocaleData(locales)
-  return locales
 };
 
 const changeLanguage = function (newLanguage) {
   this.setState({
     language: newLanguage,
-    availableLanguage: (function (newLang) {
-      switch (newLang) {
-        case 'en':
-          return 'it'
-        case 'it':
-          return 'en'
-        default:
-          return 'en'
-      }
-    })(newLanguage)
+    // availableLanguage: (function (currentLanguage) {
+    //   switch (currentLanguage) {
+    //     case 'en':
+    //       return 'it'
+    //     case 'it':
+    //       return 'en'
+    //     default:
+    //       return 'en'
+    //   }
+    // })(newLanguage)
   })
 }
 
@@ -45,5 +45,5 @@ export const messageSource = {
   availableLanguages: availableLanguages,
   messages: messages,
   changeLanguage: changeLanguage,
-  init: loadLocaleData
+  init: initialize
 }

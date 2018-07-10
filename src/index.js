@@ -3,11 +3,11 @@ import './css/styles.css'
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-import {AltApp} from './js/alt-app'
+import { App } from './js/app'
 
 ReactDOM.render(
   <div>
-    <AltApp />
+    <App />
   </div>,
 
   document.getElementById('root')
