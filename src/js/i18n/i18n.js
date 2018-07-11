@@ -27,16 +27,16 @@ const initialize = function () {
 const changeLanguage = function (newLanguage) {
   this.setState({
     language: newLanguage,
-    // availableLanguage: (function (currentLanguage) {
-    //   switch (currentLanguage) {
-    //     case 'en':
-    //       return 'it'
-    //     case 'it':
-    //       return 'en'
-    //     default:
-    //       return 'en'
-    //   }
-    // })(newLanguage)
+    availableLanguage: (function (currentLanguage) {
+      switch (currentLanguage) {
+        case 'en':
+          return 'it'
+        case 'it':
+          return 'en'
+        default:
+          return 'en'
+      }
+    })(newLanguage)
   })
 }
 
