@@ -11,16 +11,16 @@ export class App extends React.Component {
     messageSource.init()
     this.state = {
       language: messageSource.language,
-      // availableLanguage: (function (currentLanguage) {
-      //   switch (currentLanguage) {
-      //     case 'en':
-      //       return 'it'
-      //     case 'it':
-      //       return 'en'
-      //     default:
-      //       return 'en'
-      //   }
-      // })(messageSource.language)
+      availableLanguage: (function (currentLanguage) {
+        switch (currentLanguage) {
+          case 'en':
+            return 'it'
+          case 'it':
+            return 'en'
+          default:
+            return 'en'
+        }
+      })(messageSource.language)
     }
   }
 
@@ -50,7 +50,7 @@ export class App extends React.Component {
           <div>
             <Route exact path="/" component={Hero} />
             <Route path="/home" render={props => (
-              <Layout {...props} changeLanguage={messageSource.changeLanguage.bind(this, 'en')} />
+              <Layout {...props} changeLanguage={messageSource.changeLanguage.bind(this, this.state.availableLanguage)} />
             )}
             />
           </div>
