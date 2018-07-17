@@ -1,0 +1,13 @@
+{
+  "hero": "IT_Hero",
+  "home": "IT_Home",
+  "alert": "IT_Alert",
+  "header.title": "IT_Header title",
+  "header.body": "IT_Header body",
+  "body.title": "IT_Body title",
+  "body.body": "IT_Body body",
+  "footer.title": "IT_Footer title",
+  "footer.body": "IT_Footer body",
+  "langSelectorButton": "English",
+  "langSelectorValue": "en"
+}

@@ -9,10 +9,10 @@ export class Footer extends React.Component {
     return (
       <div className='footer'>
         <h1 className='title'>
-          <FormattedMessage id='footerTitle' />
+          <FormattedMessage id='footer.title' />
         </h1>
         <h2 className='body'>
-          <FormattedMessage id='footerBody' />
+          <FormattedMessage id='footer.body' />
         </h2>
         <div className='imgDiv'>
         </div>
