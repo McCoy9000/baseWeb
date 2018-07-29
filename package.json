@@ -4,6 +4,7 @@
   "description": "web",
   "dependencies": {
     "axios": "^0.18.0",
+    "bootstrap": "^4.1.3",
     "google-fonts-webpack-plugin": "^0.4.4",
     "history": "^4.7.2",
     "i18n-react": "^0.6.4",

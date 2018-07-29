@@ -5,15 +5,13 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { FormattedMessage } from 'react-intl'
 
+import { Image } from './common/image'
+
 export class Hero extends React.Component {
   render() {
     return (
       <div>
-        <h1><FormattedMessage id='hero' /></h1>
-        <Link to='/home'><button><FormattedMessage id='home' /></button></Link>
-        <button>
-          <FormattedMessage id='alert' />
-        </button>
+        <Link to='/home'><Image src={`/${require('images/hero/hero.jpg')}`} /></Link>
       </div>
     )
   }

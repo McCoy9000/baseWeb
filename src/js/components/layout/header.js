@@ -9,6 +9,9 @@ export class Header extends React.Component {
   render() {
     return (
       <div className="header">
+        <div>
+          <LangSelector changeLanguage={this.props.changeLanguage} />
+        </div>
         <h1 className="title">
           <FormattedMessage id="header.title" />
         </h1>
@@ -16,9 +19,6 @@ export class Header extends React.Component {
           <FormattedMessage id="header.body" />
         </h2>
         <div className="imgDiv" />
-        <div>
-          <LangSelector changeLanguage={this.props.changeLanguage} />
-        </div>
       </div>
     );
   }

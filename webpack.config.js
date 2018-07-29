@@ -5,7 +5,7 @@ var GoogleFontsPlugin = require('google-fonts-webpack-plugin')
 
 var DIST_DIR = path.resolve(__dirname, 'dist')
 var SRC_DIR = path.resolve(__dirname, 'src')
-var RES_DIR = path.resolve(__dirname, 'resources')
+var RES_DIR = path.resolve(__dirname, 'src/resources')
 
 var config = {
   mode: 'development',

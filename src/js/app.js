@@ -1,3 +1,5 @@
+import '../css/vendor/bootstrap.min.css'
+
 import React from 'react'
 import { BrowserRouter as Router, Route, IndexRoute, browserHistory } from 'react-router-dom'
 import { IntlProvider } from 'react-intl'
