@@ -11,10 +11,12 @@ class ImageReel extends Component {
     images: require.context('images/gallery/', true).keys()
   }
   render() {
+    const { images } = this.state;
+
     return (
       <div>
-        {this.state.images.map(key => {
-          var imgFileName = key.split('./')[1]
+        {images.map(image => {
+          var imgFileName = image.split('./')[1]
           return (
             <Image key={imgFileName}
               className='portfolioImage'
