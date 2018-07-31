@@ -2,18 +2,18 @@ import '../../../css/styles.css'
 
 import React from 'react'
 import { Link } from 'react-router-dom'
-
+import { FormattedMessage } from 'react-intl'
 import Button from '../common/button';
 
 export class NavMenu extends React.Component {
 
   render() {
     return (
-      <nav>
-        <Link to='/home/portfolio'><Button name="portfolio" type="portfolio" value="portfolio" buttonTitle="portfolio" /></Link>
-        <Link to='/home/resume'><Button name="resume" type="resume" value="resume" buttonTitle="resume" /></Link>
-        <Link to='/home/blog'><Button name="blog" type="blog" value="blog" buttonTitle="blog" /></Link>
-        <Link to='/home/contact'><Button name="contact" type="contact" value="contact" buttonTitle="contact" /></Link>
+      <nav className="nav">
+        <Link className='nav-link' to='/home/portfolio'><FormattedMessage id='navbarPortfolio' /></Link>
+        <Link className='nav-link' to='/home/resume'><FormattedMessage id='navbarResume' /></Link>
+        <Link className='nav-link' to='/home/blog'><FormattedMessage id='navbarBlog' /></Link>
+        <Link className='nav-link' to='/home/contact'><FormattedMessage id='navbarContact' /></Link>
       </nav>
     )
   }

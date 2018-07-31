@@ -2,3 +2,5 @@ node_modules
 dist
 .vscode
 public
+.firebaserc
+.firebase.json

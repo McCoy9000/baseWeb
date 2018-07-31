@@ -82,10 +82,7 @@ var config = {
     new webpack.HotModuleReplacementPlugin(),
     new webpack.ProvidePlugin({
       'React': 'react',
-      'ReactDOM': 'react-dom',
-      '_': 'lodash',
-      'axios': 'axios',
-      'FormattedMessage': 'react-intl'
+      'ReactDOM': 'react-dom'
     }),
     new GoogleFontsPlugin({
       fonts: [
